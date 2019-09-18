@@ -16,7 +16,7 @@ library(KoNLP)
 
 ```{r}
 useSejongDic()
-fname = "C:/R/data/30_AgainCourt.txt"
+fname = "C:/R/data/aa.txt"
 road1 = readLines(fname)
 ```
 
@@ -61,7 +61,7 @@ neg.matches <- !is.na(neg.matches)
 sum(pos.matches)  # 점수 합(긍정단어)
 sum(neg.matches)  # 점수 합(부정단어) 
 score <- sum(pos.matches) - sum(neg.matches)
-
+score
 pos_word <- words[pos.matches ]
 neg_word <- words[neg.matches ]
 
